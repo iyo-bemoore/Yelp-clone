@@ -11,16 +11,16 @@ export default  () => {
                 params: {
                     term: searchTerm,
                     limit: 50,
-                    location: 'san jose'
+                    location: 'New York'
                 }
             })
             setResults(res.data.businesses)
         
         } catch (e) {
-            setErrorMessage('Something went wrongng')      
+            setErrorMessage('Something went wrongng')  
+            console.log(e)    
         }
     }
-    
     useEffect(() => {
         searchAPI('pasta')
     }, [])
