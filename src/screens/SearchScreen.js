@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, ScrollView,ActivityIndicator } from 'react-native';
 import SearchBar from '../components/SearchBar';
 import useResults from '../hooks/useResults'
 import ResultsList from '../components/ResultsList';
@@ -16,27 +16,35 @@ const SearchScreen = () => {
             return res.price === price
         })
     }
-
+     
     return (
-        <View>
-            <View style={{flex:1}}>
+        <>
+         <View style={{flex:1}} >
                 <SearchBar
                     term={term}
-                    onTermChange={() => setTerm(term)}
+                    onTermChange={setTerm}
                     onTermSubmit={() => searchAPI(term)}
-                />
+                    />
                 {errorMessage ? <Text> {errorMessage} </Text> : null}
                 <Text style={styles.result}> {results.length} Places  </Text>
-            </View>
-            <View>
             <ScrollView>
-                <ResultsList results={filterResultsByPrice('$')} title="Cost Effective" />
-                <ResultsList results={filterResultsByPrice('$$')} title="Bit Pricier" />
-                <ResultsList results={filterResultsByPrice('$$$')} title="Big Spender" />
+                {results.length < 1 ? (
+                     <View style={[styles.container, styles.horizontal]}>
+                        <ActivityIndicator size="large" color="#74A235" />
+                     </View>
+                )
+                  : <View>
+                    <ResultsList  results={filterResultsByPrice('$')} title="Cost Effective"/>
+                    <ResultsList  results={filterResultsByPrice('$$')} title="Bit Pricier"/>
+                    <ResultsList  results={filterResultsByPrice('$$$')} title="Big Spender"/>
+                    <ResultsList  results={filterResultsByPrice('$$$$')} title="High End"/>
+                    </View>
+                    }
             </ScrollView>
-            </View>
         </View>
+       </>
     )
+   
 }
 
 
@@ -45,6 +53,15 @@ const styles = StyleSheet.create({
         alignSelf:'flex-end',
         marginRight:7,
         opacity:0.5
+    },
+    container: {
+        flex: 1,
+        justifyContent: 'center'
+    },
+    horizontal: {
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+        padding: 10
     }
 });
 

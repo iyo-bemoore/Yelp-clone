@@ -1,0 +1,104 @@
+{
+    "alias": "bigoi-venezia-new-york",
+    "categories": Array [
+      Object {
+        "alias": "italian",
+        "title": "Italian",
+      },
+      Object {
+        "alias": "pastashops",
+        "title": "Pasta Shops",
+      },
+    ],
+    "coordinates": Object {
+      "latitude": 40.770036,
+      "longitude": -73.9577755,
+    },
+    "display_phone": "(917) 262-0680",
+    "hours": Array [
+      Object {
+        "hours_type": "REGULAR",
+        "is_open_now": false,
+        "open": Array [
+          Object {
+            "day": 0,
+            "end": "2200",
+            "is_overnight": false,
+            "start": "1100",
+          },
+          Object {
+            "day": 1,
+            "end": "2200",
+            "is_overnight": false,
+            "start": "1100",
+          },
+          Object {
+            "day": 2,
+            "end": "2200",
+            "is_overnight": false,
+            "start": "1100",
+          },
+          Object {
+            "day": 3,
+            "end": "2200",
+            "is_overnight": false,
+            "start": "1100",
+          },
+          Object {
+            "day": 4,
+            "end": "2200",
+            "is_overnight": false,
+            "start": "1100",
+          },
+          Object {
+            "day": 5,
+            "end": "2200",
+            "is_overnight": false,
+            "start": "1100",
+          },
+          Object {
+            "day": 6,
+            "end": "2200",
+            "is_overnight": false,
+            "start": "1100",
+          },
+        ],
+      },
+    ],
+    "id": "JBthOvTegHbrLDiVaCAy5Q",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/sw2TeTUoHrJza8fJEl_JHA/o.jpg",
+    "is_claimed": true,
+    "is_closed": false,
+    "location": Object {
+      "address1": "1415 2nd Ave",
+      "address2": null,
+      "address3": "",
+      "city": "New York",
+      "country": "US",
+      "cross_streets": "73rd St & 74th St",
+      "display_address": Array [
+        "1415 2nd Ave",
+        "New York, NY 10021",
+      ],
+      "state": "NY",
+      "zip_code": "10021",
+    },
+    "messaging": Object {
+      "url": "https://www.yelp.com/raq/bigoi-venezia-new-york?adjust_creative=heuLa84SfunCi2vselGNaQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=heuLa84SfunCi2vselGNaQ#popup%3Araq",
+      "use_case_text": "Message the Business",
+    },
+    "name": "Bigoi Venezia",
+    "phone": "+19172620680",
+    "photos": Array [
+      "https://s3-media2.fl.yelpcdn.com/bphoto/sw2TeTUoHrJza8fJEl_JHA/o.jpg",
+      "https://s3-media1.fl.yelpcdn.com/bphoto/hmg_dl9ly2cJzFeZN7C7Ig/o.jpg",
+    ],
+    "price": "$",
+    "rating": 4.5,
+    "review_count": 210,
+    "transactions": Array [
+      "pickup",
+      "delivery",
+    ],
+    "url": "https://www.yelp.com/biz/bigoi-venezia-new-york?adjust_creative=heuLa84SfunCi2vselGNaQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=heuLa84SfunCi2vselGNaQ",
+  }" 
